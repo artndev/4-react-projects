@@ -13,6 +13,7 @@ function App() {
   const [success, setSuccess] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState('');
 
+
   React.useEffect(() => {
     fetch('https://reqres.in/api/users')
       .then(res => res.json())
@@ -37,6 +38,7 @@ function App() {
   const onClickSendInvites = () => {
     setSuccess(true);
   }
+  
 
   return (
     <div className="App">
